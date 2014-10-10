@@ -29,7 +29,27 @@ $ bundle exec rails generate rspec:install
 $ bundle exec spring s
 ```
 
+##Githubの設定
+
+リポジトリの作成をする
+- [https://github.com/new](https://github.com/new)
+
+gitの設定をする
+
+```sh
+$ git init
+$ git add .
+$ git commit -m "first commit"
+$ git remote add origin git@github.com:ユーザー名/リポジトリ名.git
+$ git push origin master
+```
+
+
 ##Herokuの設定
+
+アプリケーションの作成をする
+
+- [https://dashboard-next.heroku.com/new](https://dashboard-next.heroku.com/new)
 
 view画面を作成しないとエラーが出るので、以下のコマンドでview画面を作成する。
 
@@ -72,6 +92,7 @@ production:
 ```
 
 ```sh
+$ git remote add heroku git@heroku.com:アプリ名.git
 $ heroku login
 $ heroku config
 ```
@@ -95,6 +116,10 @@ $ heroku config:set RACK_ENV=production
 
 ##Travisとの連携
 
+githubから取得できるようにしておく。
+
+ - [https://travis-ci.org/profile](https://travis-ci.org/profile)
+
 ```sh
 $ heroku auth:token
 ```
@@ -107,10 +132,14 @@ $ bundle exec travis setup heroku
 
 ##NewRelicでHerokuアプリをスリープさせなくする
 
+ライセンスキーを取得しておく
+
+- [https://rpm.newrelic.com/applications/setup](https://rpm.newrelic.com/applications/setup)
+
 ```sh
 $ heroku addons:add newrelic:stark
 $ heroku config:set NEW_RELIC_APP_NAME=heroku上でのアプリ名
-$ heroku config:set NEW_RELIC_LICENSE_KEY=NewRelicのToken
+$ heroku config:set NEW_RELIC_LICENSE_KEY=NewRelicのライセンスキー
 ```
 
 URLにアクセスして、Pingを飛ばすようにする
