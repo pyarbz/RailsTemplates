@@ -26,7 +26,38 @@ $ rm -rf .git
 $ bundle install --path .bundle --without test production
 $ bundle exec rails new . --skip-bundle --skip-test-unit
 $ bundle exec rails generate rspec:install
-$ bundle exec spring s
+```
+
+`app/assets/javascripts/application.js`
+
+
+`//= require turbolinks`を消す。
+
+```javascript
+//= require jquery
+//= require jquery_ujs
+//= require_tree .
+```
+
+`app/views/layouts/application.html.erb`
+
+- 変更前
+
+```html
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+```
+
+- 変更後
+
+```html
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+```
+
+Railsの起動
+```sh
+$ bundle exec spring rails s
 ```
 
 ##Githubの設定
@@ -63,6 +94,7 @@ $ bundle exec rails g controller Top index
 
 ```ruby
 Rails.application.routes.draw do
+  # get 'top/index'
   root 'top#index'
 end
 ```
