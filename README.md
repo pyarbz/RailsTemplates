@@ -174,6 +174,21 @@ $ bundle exec travis env set DB_HOST ホスト名
 $ bundle exec travis env list
 ```
 
+`/config/database.yml`
+
+```yaml
+test:
+  adapter: postgresql
+  encoding: utf8
+  port: 5432
+  host: <%= ENV['DB_HOST'] %>
+  database: <%= ENV['DB_DATABASE'] %>
+  pool: 5
+  username: <%= ENV['DB_USERNAME'] %>
+  password: <%= ENV['DB_PASSWORD'] %>
+  timeout: 5000
+```
+
 ##NewRelicでHerokuアプリをスリープさせなくする
 
 ライセンスキーを取得しておく
