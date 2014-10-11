@@ -44,8 +44,6 @@ bower.json
 ## intelliJ IDEA
 /*.iml
 /.idea/
-
-## railways cache
 /railways.cache
 
 ## assets files
@@ -53,3 +51,22 @@ bower.json
 
 ## "bundle exec rails generate figaro:install" generates figaro files
 /config/application.yml
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Windows Folder config file
+Desktop.ini
+
+# Windows Recycle Bin used on file shares
+/$RECYCLE.BIN
+
+# Mac file system caches
+.DS_Store
+
+# for vim caches
+*.swp
+
+# for aptana studio project file
+.project
