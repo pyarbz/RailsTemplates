@@ -162,6 +162,18 @@ Travis用のTokenを生成したので、travis.ymlに以下のコマンドで�
 $ bundle exec travis setup heroku
 ```
 
+必要であれば、Travisに環境変数を設定する
+
+```sh
+$ bundle exec travis login --org
+$ bundle exec travis env set DB_HOST ホスト名
+$ bundle exec travis env set DB_DATABASE データベース名
+$ bundle exec travis env set DB_PASSWORD パスワード
+$ bundle exec travis env set DB_USERNAME ユーザー名
+$ bundle exec travis env set DB_HOST ホスト名
+$ bundle exec travis env list
+```
+
 ##NewRelicでHerokuアプリをスリープさせなくする
 
 ライセンスキーを取得しておく
