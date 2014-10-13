@@ -70,3 +70,6 @@ Desktop.ini
 
 # for aptana studio project file
 .project
+
+# binstubs files ($ bundle install --binstabs .bin)
+/.bin/
