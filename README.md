@@ -23,9 +23,10 @@ $ git clone git@github.com:pyarbz/RailsTemplates.git アプリ名
 $ cd アプリ名
 $ rm -rf README.md
 $ rm -rf .git
-$ bundle install --path .bundle --without test production
+$ bundle install --path .bundle --without production --binstubs .bin
 $ bundle exec rails new . --skip-bundle --skip-test-unit
 $ bundle exec rails generate rspec:install
+$ bundle exec spring binstub --all
 ```
 
 `app/assets/javascripts/application.js`
