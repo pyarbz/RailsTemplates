@@ -72,3 +72,7 @@ gem 'bootstrap-sass', '~> 3.2.0'
 
 # Slick jQuery Plugins
 # gem 'slick_rails'
+
+# HTML engine erb -> slim
+gem 'slim-rails'
+gem 'html2slim', group: :development
