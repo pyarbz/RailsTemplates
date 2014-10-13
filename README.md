@@ -27,6 +27,7 @@ $ bundle install --path .bundle --without production --binstubs .bin
 $ bundle exec rails new . --skip-bundle --skip-test-unit
 $ bundle exec rails generate rspec:install
 $ bundle exec spring binstub --all
+$ bundle exec guard init spring rspec
 ```
 
 `app/assets/javascripts/application.js`
