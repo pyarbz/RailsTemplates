@@ -35,9 +35,30 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 # Use sqlite3 as the database for Active Record
+gem 'sqlite3', group: [:development, :test]
+
+# Use http Clients
+gem 'httpclient'
+
+# BDD
 group :development, :test do
-  gem 'sqlite3'
   gem 'rspec-rails'
+  gem 'spring-commands-rspec'
+  gem 'factory_girl_rails'
+  gem 'capybara'
+  gem 'guard-rspec'
+  gem 'guard-livereload'
+end
+
+# Debugger
+group :development do
+  gem 'pry-rails'
+  gem 'pry-byebug'
+  gem 'pry-stack_explorer'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'hirb'
+  gem 'hirb-unicode'
 end
 
 # heroku settings
@@ -54,9 +75,6 @@ group :development do
   # "bundle exec rails generate figaro:install" generates ENV files
   #  gem 'figaro'
 end
-
-# Use http Clients
-gem 'httpclient'
 
 # Github Oauth
 # gem 'devise'
