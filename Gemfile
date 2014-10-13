@@ -50,6 +50,7 @@ group :development, :test do
   gem 'guard-rspec'
   gem 'guard-livereload'
   gem 'rb-fsevent' if `uname` =~ /Darwin/
+  gem 'terminal-notifier-guard' if `uname` =~ /Darwin/
 end
 
 # Debugger
