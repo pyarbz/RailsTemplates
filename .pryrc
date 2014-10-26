@@ -1,4 +1,4 @@
-# hirb settings
+# hirbの設定
 begin
   require 'hirb'
   rescue LoadError
