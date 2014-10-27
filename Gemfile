@@ -49,6 +49,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.1.0'
   gem 'spring-commands-rspec'
   gem 'shoulda-matchers'
+  gem 'database_cleaner'
   gem 'factory_girl_rails'
   gem 'capybara'
   gem 'guard-spring'
