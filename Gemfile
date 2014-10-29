@@ -52,7 +52,7 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'factory_girl_rails'
   gem 'capybara'
-  gem 'guard-spring'
+  # gem 'guard-spring'
   gem 'guard-rspec'
   gem 'guard-livereload'
   gem 'rb-fsevent'
