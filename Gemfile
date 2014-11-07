@@ -94,7 +94,7 @@ end
 # gem 'omniauth-github'
 
 # Json API cross site domain allowed
-# gem 'rack-cors', :require => 'rack/cors'
+# gem 'rack-cors', require: 'rack/cors'
 
 # Bootstrap 3.2
 # gem 'bootstrap-sass', '~> 3.2.0'
