@@ -123,3 +123,6 @@ gem 'html2slim', group: :development
 # Dropbox
 gem 'dropbox-sdk'
 # gem 'omniauth-dropbox-oauth2'
+
+# background cron
+gem 'whenever', require: false
