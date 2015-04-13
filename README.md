@@ -142,8 +142,6 @@ $ heroku config:set DB_HOST=ホスト名
 $ heroku config:set DB_DATABASE=データベース名
 $ heroku config:set DB_PASSWORD=パスワード
 $ heroku config:set DB_USERNAME=ユーザー名
-$ heroku config:set LANG=ja_JP.UTF-8
-$ heroku config:set TZ=Asia/Tokyo
 $ heroku config:set SECRET_KEY_BASE=secrets.ymlに書いてあった文字列
 $ heroku config:set RACK_ENV=production
 ```
