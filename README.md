@@ -196,7 +196,7 @@ test:
 - [https://rpm.newrelic.com/applications/setup](https://rpm.newrelic.com/applications/setup)
 
 ```sh
-$ heroku addons:add newrelic:stark
+$ heroku addons:create newrelic --app アプリ名
 $ heroku config:set NEW_RELIC_APP_NAME=heroku上でのアプリ名
 $ heroku config:set NEW_RELIC_LICENSE_KEY=NewRelicのライセンスキー
 ```
