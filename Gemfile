@@ -60,6 +60,7 @@ end
 
 # Debugger
 group :development do
+  gem 'spring-commands-rspec'
   gem 'pry-rails'
   gem 'pry-byebug'
   gem 'pry-stack_explorer'
