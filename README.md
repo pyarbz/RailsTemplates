@@ -26,7 +26,7 @@ $ rm -rf .git
 $ bundle install --path .bundle --without production --binstubs .bin
 $ bundle exec rails new . --skip-bundle --skip-test-unit
 $ bundle exec rails generate rspec:install
-$ bundle binstubs rspec-core --force
+$ bundle exec spring binstub --all
 $ bundle exec guard init rspec livereload
 ```
 
