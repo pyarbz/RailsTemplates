@@ -47,7 +47,6 @@ gem 'foreigner'
 # BDD
 group :development, :test do
   gem 'rspec-rails', '~> 3.1.0'
-  gem 'spring-commands-rspec'
   gem 'shoulda-matchers', require: false
   gem 'database_cleaner'
   gem 'factory_girl_rails'
